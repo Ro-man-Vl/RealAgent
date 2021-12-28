@@ -253,7 +253,7 @@ p {
 }
 
 .property-display__header {
-    padding: 102px 0 76px;
+    padding: 102px 0 74px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -297,6 +297,15 @@ p {
 }
 
 .property-display__block--house {
+    
+}
+
+.property-display__block--apartment {
+    display: none;
+}
+
+.property-display__block--land {
+    display: none;
 }
 
 .property-display__item {
@@ -310,7 +319,7 @@ p {
     grid-area: 1/1/3/2;
 }
 .property-display__description {
-    padding: 45px 43px;
+    padding: 45px 45px;
     display: flex;
     align-items: flex-end;
     background-color: #fff;
@@ -332,7 +341,7 @@ p {
 .property-display__description-text-price {
     font-size: 21.33px;
     line-height: 29px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .property-display__description-text-parameters {
@@ -343,7 +352,7 @@ p {
 }
 
 span + .property-display__icon {
-    margin-left: 20px;
+    margin-left: 17px;
 }
 
 .property-display__icon-figure {
