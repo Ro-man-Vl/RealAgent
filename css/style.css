@@ -2,12 +2,12 @@
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
-body{
-    background-color: #E5E5E5;
+body {
+    background-color: #FBFCFF;
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Noto Serif', serif; */
     font-family: 'Roboto', sans-serif;
@@ -17,35 +17,60 @@ body{
     color: #000000;
 }
 
-a{
+a {
     text-decoration: none;
     color:inherit;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-figure{
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
 /* Elements ------------------------------------- */
 
-.button-link{
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.button-link {
     font-family: 'Lato', sans-serif;
     line-height: 19px;
     padding: 12px 43px;
     display: inline-block;
 }
 
+.headline {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28.43px;
+    line-height: 40px;
+    color: #010916;
+
+}
 
 /* Header ----------------------------------------*/
 
 .header {
     background-color: #fff;
-    height: 87vh;
+    height: 783px;
 }
 
 .header__decoration-rectangle--outer-big {
@@ -55,12 +80,6 @@ figure{
     position: absolute;
     right: 0;
     z-index: 0;
-}
-
-.container {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .header__decoration-rectangle--inner-tall {
@@ -184,3 +203,44 @@ figure{
     grid-row: 1/2;
 }
 
+/* Article ---------------------------------------*/
+
+.article__background-field {
+    margin: 183px 0 88px;
+    padding: 82px 0;
+    background-image: url(../images/article-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.article__wrapper {
+    padding: 63px 39px 62px 54px;
+    background: #FFFFFF;
+    max-width: 557px;
+}
+
+.article__headline {
+    margin-bottom: 28px;
+    max-width: 458px;
+}
+
+.article__text {
+    margin-bottom: 35px;
+    opacity: .7;
+}
+
+.article__link {
+    cursor: pointer;
+}
+
+.article__link-text {
+    font-size: 18px;
+    line-height: 23px;
+    color: #3454D1;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+.article__link--icon {
+    fill: #3454D1;
+}
