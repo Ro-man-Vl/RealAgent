@@ -287,32 +287,42 @@ p {
 }
 
 .property-display__body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 29px;
+    
 }
 .property-display__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
+
 .property-display__block--house {
 }
+
 .property-display__item {
+    display: grid;
+    grid-template-rows: 299px 102px 107px;
+    justify-items: center;
+    margin-bottom: 30px;
 }
+
 .property-display__image {
+    grid-area: 1/1/3/2;
 }
 .property-display__description {
     padding: 45px 43px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     background-color: #fff;
-    max-width: 508px;
-    margin: auto;
-    box-shadow: 6px 16px 18px 0px #fbfcff, -6px 16px 18px 0px #fbfcff;
-    position: relative;
-    top: -104px;
+    /* max-width: 508px; */
+    box-shadow: 8px 8px 20px 0px #f6f8fa, -8px 8px 18px 0px #f6f8fa;
+    grid-area: 2/1/4/2;
 }
+
 .property-display__description-text {
+    margin-right: 128px;
 }
+
 .property-display__description-text-title {
     font-family: 'Noto Serif', serif;
     line-height: 22px;
