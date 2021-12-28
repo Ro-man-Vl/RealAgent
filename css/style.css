@@ -50,7 +50,7 @@ figure{
 
 .header__decoration-rectangle--outer-big {
     width: calc((100vw - 1142px) / 2);
-    height: 87vh;
+    height: 783px;
     background-color: rgb(66, 127, 246, .1);
     position: absolute;
     right: 0;
@@ -65,7 +65,7 @@ figure{
 
 .header__decoration-rectangle--inner-tall {
     width: 230px;
-    height: 87vh;
+    height: 783px;
     background-color: rgb(66, 127, 246, .1);
     position: absolute;
     z-index: 0;
@@ -128,6 +128,7 @@ figure{
 .header__main-area {
     display: grid;
     grid-template-columns: 463px 137px minmax(250px, 543px);
+    padding-bottom: 127px;
 }
 
 .header__content {
