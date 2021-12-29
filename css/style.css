@@ -250,6 +250,7 @@ p {
 
 .property-display {
     background-color: #fff;
+    margin-bottom: 65px;
 }
 
 .property-display__header {
@@ -381,4 +382,42 @@ span + .property-display__icon {
     line-height: 17px;
     color: #3454D1;
     cursor: pointer;
+}
+
+/* Gallery---------------------------------------- */
+
+.gallery {
+    padding-top: 100px;
+
+}
+
+.gallery__headline {
+    font-weight: bold;
+    max-width: 502px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.gallery__text {
+    opacity: .7;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.gallery__popup-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__img {
+    margin-bottom: 30px;
+}
+
+.gallery__img--big {
+    max-width: 554px;
+}
+
+.gallery__img--small {
+    max-width: 360px;
 }
