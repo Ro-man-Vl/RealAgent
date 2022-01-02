@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    $('.gallery__popup-gallery').magnificPopup({
+    $('.gallery__img').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
 		closeBtnInside: false,

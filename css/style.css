@@ -411,7 +411,8 @@ span + .property-display__icon {
 }
 
 .gallery__img {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
+    cursor: zoom-in;
 }
 
 .gallery__img--big {
@@ -421,3 +422,4 @@ span + .property-display__icon {
 .gallery__img--small {
     max-width: 360px;
 }
+
