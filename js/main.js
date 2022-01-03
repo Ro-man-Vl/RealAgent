@@ -20,4 +20,8 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.feedback__slider').slick({
+		dots: true,
+	  });
+
   });

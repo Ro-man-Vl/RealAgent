@@ -42,6 +42,11 @@ p {
     margin: 0;
 }
 
+button {
+    padding: 0;
+    border-width: 0ch;
+}
+
 /* Elements ------------------------------------- */
 
 .container {
@@ -325,7 +330,7 @@ p {
     align-items: flex-end;
     background-color: #fff;
     /* max-width: 508px; */
-    box-shadow: 8px 8px 20px 0px #f6f8fa, -8px 8px 18px 0px #f6f8fa;
+    box-shadow: 0px 0px 20px 4px rgb(177 179 182 / 10%);
     grid-area: 2/1/4/2;
 }
 
@@ -388,6 +393,7 @@ span + .property-display__icon {
 
 .gallery {
     padding-top: 100px;
+    margin-bottom: 86px;
 
 }
 
@@ -423,3 +429,129 @@ span + .property-display__icon {
     max-width: 360px;
 }
 
+/* Feedback --------------------------------------------*/
+
+.feedback {
+    padding: 95px 0;
+    background-color: #fff;
+}
+
+.feedback__wrapper {
+    background-image: url(../images/feedback-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 111px 0;
+}
+
+.feedback__slider {
+    background-color: #fff;
+    max-width: 551px;
+    margin-left: auto;
+    box-shadow: -10px 5px 20px 2px rgb(177 179 182 / 10%);
+}
+
+.feedback .slick-arrow {
+    font-size: 0;
+    position: absolute;
+    top: 90%;
+    z-index: 10;
+    border: none;
+    width: 15px;
+    height: 26px;
+    background-color: #fff;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+ .feedback .slick-prev {
+    left: 10px;
+    background-image: url(../images/arrow-left.svg);
+}
+
+.feedback .slick-next {
+    right: 10px;
+    background-image: url(../images/arrow-right.svg);
+} 
+
+.feedback .slick-dots {
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    top: 90%;
+    z-index: 10;
+    left: 50%;
+    margin-left: -39px;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback .slick-dots li {
+    margin-left: 5px;
+}
+
+.feedback .slick-dots button {
+    background-color: rgb(219, 219, 219, .5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback .slick-active button {
+    background-color: rgb(219, 219, 219, 1);
+}
+
+.feedback__slider-item {
+    padding: 45px 148px 51px 45px;
+}
+.feedback__stars {
+    width: 88px;
+    height: 15.5px;
+    margin-bottom: 47px;
+}
+
+.feedback__stars--5{
+    background-image: url(../images/5-stars.png);
+}
+
+.feedback__stars--4{
+    background-image: url(../images/4-stars.png);
+}
+
+.feedback__stars--3{
+    background-image: url(../images/3-stars.png);
+}
+
+.feedback__text {
+    opacity: .7;
+    margin-bottom: 58px;
+    line-height: 23.8px;
+}
+
+.feedback__img-container {
+    display: inline-block;
+    max-width: 41px;
+    max-height: 41px;
+    margin-left: 4px;
+    margin-right: 6px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.feedback__img {
+    max-width: 100%;
+}
+
+.feedback__autor {
+    display: inline-block;
+}
+.feedback__autor-name {
+    opacity: 1;
+    margin-bottom: 4px;
+}
+.feedback__autor-address {
+    font-size: 14px;
+    opacity: 0.7;
+}
