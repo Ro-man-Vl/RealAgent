@@ -605,14 +605,12 @@ span + .property-display__icon {
     display: none;
     position: absolute;
     margin-top: -30px;
-    max-width: 740px;
-    margin-left: -194px;
+    max-width: 570px;
     background-color: #ffffff;
 }
 
 .questions__item-ansver-text {
     opacity: .7;
-    margin-top: 10px;
-    margin-left: 10px;
     line-height: 23px;
+    padding: 20px 20px 20px 47px;
 }
