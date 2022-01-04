@@ -85,7 +85,7 @@ input:focus-visible {
 
 .header {
     background-color: #fff;
-    /* height: 783px; */
+    height: 780px;
 }
 
 .container__header {
@@ -217,7 +217,7 @@ input:focus-visible {
 
 .search-form {
     position: relative;
-    top: 56px;
+    top: -72px;
 }
 
 .search-form__container {
@@ -299,7 +299,7 @@ input:focus-visible {
 /* Article ---------------------------------------*/
 
 .article__background-field {
-    margin: 170px 0 88px;
+    margin: 43px 0 88px;
     padding: 82px 0;
     background-image: url(../images/article-background.jpg);
     background-repeat: no-repeat;
@@ -716,7 +716,7 @@ span + .property-display__icon {
 
 .subscription-conatainer {
     position: relative;
-    top: 105px;
+    top: 106px;
 }
 
 .subscription__wrapper {
@@ -724,7 +724,7 @@ span + .property-display__icon {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
-    padding: 44px 0 61px 62px;
+    padding: 44px 0 63px 62px;
 }
 
 .subscription-title {
@@ -742,7 +742,7 @@ span + .property-display__icon {
     color: #FFFFFF;
     line-height: 23px;
     opacity: 0.7;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 }
 
 .subscription-form {
