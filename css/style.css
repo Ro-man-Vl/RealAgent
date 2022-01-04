@@ -89,7 +89,7 @@ input:focus-visible {
 }
 
 .header__decoration-rectangle--outer-big {
-    width: calc((100vw - 1142px) / 2);
+    width: calc((100vw - 1159px) / 2);
     height: 783px;
     background-color: rgb(66, 127, 246, .1);
     position: absolute;
@@ -194,15 +194,6 @@ input:focus-visible {
     max-width: 463px;
 }
 
-.header__decoration-rectangle--inner-small {
-    width: 79%;
-    background-color: rgb(66, 127, 246, .1);
-    grid-column: 3/-1;
-    margin: 62px 0 156px;
-    margin-left: auto;
-    z-index: 0;
-}
-
 .header__img-wrapper {
     grid-column: 2/-1;
     max-width: 100%;
@@ -229,6 +220,7 @@ input:focus-visible {
     max-width: 1005px;
     padding: 34px 46px;
     background-color: #fff;
+    box-shadow: 3px 7px 20px 2px rgb(177 179 182 / 10%);
     z-index: 5;
     position: relative;
     top: -19px;
