@@ -614,3 +614,61 @@ span + .property-display__icon {
     line-height: 23px;
     padding: 20px 20px 20px 47px;
 }
+
+/* Footer ------------------------------------------------*/
+
+.footer {
+    background: #000411;
+}
+
+.footer__container {
+    padding-top: 227px;
+    padding-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer__block-contacts {
+    margin-top: -8px;
+}
+
+.footer__contacts-title {
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.445em;
+    margin-bottom: 35px;
+}
+
+.footer__contacts-address {
+    max-width: 211px;
+    margin-bottom: 23px;
+}
+
+.footer__contacts-address,
+.footer__contacts-email,
+.footer__blocks-list {
+    opacity: .7;
+}
+
+.footer__blocks-title {
+    margin-bottom: 29px;
+}
+
+.footer__blocks-item + .footer__blocks-item {
+    margin-top: 19px;
+}
+
+.footer__block-company {
+    margin-left: 14px;
+    margin-right: 22px;
+}
+
+.footer__block-social {
+    margin-right: 138px;
+}
