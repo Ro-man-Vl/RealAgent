@@ -24,4 +24,42 @@ $(document).ready(function() {
 		dots: true,
 	  });
 
+	// Propery-display block switch -------------------------------------------
+
+	$('.property-display__menu-item').on('click', event=>{
+		$(event.currentTarget).siblings().removeClass('property-display__menu-item-active');
+		$(event.currentTarget).addClass('property-display__menu-item-active')
+	});
+	
+	$('#house').on('click', ()=>{
+		$('.property-display__block--apartment').css('display', 'none');
+		$('.property-display__block--house').css('display', 'flex');
+		$('.property-display__block--land').css('display', 'none');
+	});
+	
+	$('#apartment').on('click', ()=>{
+		$('.property-display__block--apartment').css('display', 'flex');
+		$('.property-display__block--house').css('display', 'none');
+		$('.property-display__block--land').css('display', 'none');
+	});
+
+	$('#land').on('click', ()=>{
+		$('.property-display__block--apartment').css('display', 'none');
+		$('.property-display__block--house').css('display', 'none');
+		$('.property-display__block--land').css('display', 'flex');
+	});
+
+	$('#all').on('click', ()=>{
+		$('.property-display__block--apartment').css('display', 'flex');
+		$('.property-display__block--house').css('display', 'flex');
+		$('.property-display__block--land').css('display', 'flex');
+	});
+
+	// Questions dropdown list -----------------------------------------------
+
+	$('.questions__item-button').on('click', event=>{
+		$(event.currentTarget).next().slideToggle();
+		// $(event.currentTarget).children().attr('src', './images/button-sign-minus.svg')		
+	})
+
   });

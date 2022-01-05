@@ -109,7 +109,7 @@
                         </select>
                     </div>
 
-                    <input class="search-form__button" type="submit" value="">
+                    <input class="search-form__button" type="submit" value="" disabled>
 
                 </form>
             </div>
@@ -155,11 +155,18 @@
                     </h2>
 
                     <ul class="property-display__menu-list">
-                        <li class="property-display__menu-item property-display__menu-item-active"><a href="#">House</a>
+                        <li class="property-display__menu-item property-display__menu-item-active">
+                            <div id="house">House</div>
                         </li>
-                        <li class="property-display__menu-item"><a href="#">Apertment</a></li>
-                        <li class="property-display__menu-item"><a href="#">Land</a></li>
-                        <li class="property-display__menu-item"><a href="#">View all</a></li>
+                        <li class="property-display__menu-item">
+                            <div id="apartment">Apertment</div>
+                        </li>
+                        <li class="property-display__menu-item">
+                            <div id="land">Land</div>
+                        </li>
+                        <li id="all" class="property-display__menu-item">
+                            <div>View all</div>
+                        </li>
                     </ul>
 
                 </div>
@@ -195,7 +202,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -228,7 +235,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -261,7 +268,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -294,7 +301,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -331,7 +338,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -364,7 +371,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -397,7 +404,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -430,7 +437,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -467,7 +474,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -500,7 +507,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -533,7 +540,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -566,7 +573,7 @@
                                     </div>
                                 </div>
 
-                                <button class="property-display__description-button">Add to cart</button>
+                                <button class="property-display__description-button">More details</button>
 
                             </div>
 
@@ -737,7 +744,7 @@
 
                     <form class="subscription-form" action="">
                         <input class="subscription__input-field" type="email" name="email" placeholder="Enter your email address">
-                        <input class="subscription__button" type="submit" value="Subscribe">
+                        <input class="subscription__button" type="submit" value="Subscribe" disabled>
                     </form>
                 </div>
 
