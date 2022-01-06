@@ -59,7 +59,16 @@ $(document).ready(function() {
 
 	$('.questions__item-button').on('click', event=>{
 		$(event.currentTarget).next().slideToggle();
-		// $(event.currentTarget).children().attr('src', './images/button-sign-minus.svg')		
+		var $buttonImg = $(event.currentTarget).children();
+		if ($buttonImg.hasClass("questions__item-img--plus")) {
+			$buttonImg.replaceWith('<img src="./images/button-sign-minus.svg" alt="">')
+		} else {
+			$buttonImg.replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">')
+		};
+
+		$(event.currentTarget).parent().siblings().children('.questions__item-ansver-container').css('display', 'none');
+		$(event.currentTarget).parent().siblings().children('.questions__item-button').children().replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">');	
+
 	})
 
   });

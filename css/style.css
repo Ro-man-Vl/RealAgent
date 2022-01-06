@@ -737,7 +737,7 @@ span + .property-display__icon {
 .questions__item-ansver-container {
     display: none;
     position: absolute;
-    margin-top: 250px;
+    margin-top: 290px;
     max-width: 513px;
     margin-left: -5px;
     background-color: rgb(255, 255, 255, 0.93);
@@ -745,9 +745,10 @@ span + .property-display__icon {
 
 .questions__item-ansver-text {
     opacity: .7;
-    line-height: 23px;
+    line-height: 26px;
     letter-spacing: 0.7px;
     padding-bottom: 60px;
+    font-size: 18px;
 }
 
 /* Subscripion -------------------------------------------*/
