@@ -69,6 +69,15 @@ $(document).ready(function() {
 		$(event.currentTarget).parent().siblings().children('.questions__item-ansver-container').css('display', 'none');
 		$(event.currentTarget).parent().siblings().children('.questions__item-button').children().replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">');	
 
+	});
+
+	// Burger menu ------------------------------------------------------------
+
+	$('.header__menu-burger').on('click', () => {
+		
+		$('.header__menu').slideToggle();
+
+		$('.header__menu-burger').toggleClass('header__menu-burger--active')
 	})
 
   });
