@@ -67,8 +67,9 @@ $(document).ready(function() {
 		};
 
 		$(event.currentTarget).parent().siblings().children('.questions__item-ansver-container').css('display', 'none');
-		$(event.currentTarget).parent().siblings().children('.questions__item-button').children().replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">');	
-
+		$(event.currentTarget).parent().siblings().children('.questions__item-button').children().replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">');
+		
+		$(event.currentTarget).parent().toggleClass('questions__item--active');
 	});
 
 	// Burger menu ------------------------------------------------------------
@@ -78,6 +79,14 @@ $(document).ready(function() {
 		$('.header__menu').slideToggle();
 
 		$('.header__menu-burger').toggleClass('header__menu-burger--active')
+	})
+
+	// Dropdown menu ----------------------------------------------------------
+
+	$('.footer__block').on('click', event=>{
+		$(event.currentTarget).children('.footer__blocks-list').toggleClass('footer__blocks-list--active',);
+		$(event.currentTarget).siblings('.footer__block').slideToggle();
+		$(event.currentTarget).toggleClass('footer__block--active');
 	})
 
   });
