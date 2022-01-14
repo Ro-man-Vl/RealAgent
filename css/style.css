@@ -1741,6 +1741,23 @@ span + .property-display__icon {
         margin: 30px 0 55px;
         padding: 35px 0;
     }
+
+    .property-display {
+        padding-bottom: 30px;
+    }
+
+    .property-display__header {
+        padding-top: 30px;
+    }
+
+    .gallery {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .feedback {
+        padding: 30px 0 40px;
+    }
     
     .subscription-form {
         flex-direction: column;
