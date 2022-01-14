@@ -880,14 +880,6 @@ span + .property-display__icon {
     .header__decoration-rectangle--outer-big {
         display: none;
     }
-    
-    .header__menu-area {
-        position: sticky;
-        top: 0px;
-        background-color: rgb(255, 255, 255, .9);
-        z-index: 9;
-        padding: 20px 0 0 16px;
-    }
 
     .article__wrapper {
         opacity: 0.8;
@@ -1203,14 +1195,20 @@ span + .property-display__icon {
     }
     
     .header__menu {
-        display: none;
+        position: absolute;
+        top: -220px;
+    }
+
+    .header__menu--active {
         position: absolute;
         overflow: auto;
         top: 70px;
-        left: 0;
+        left: 10px;
         margin: 0;
         padding: 10px 50px;
         background-color: rgb(255, 255, 255, .9);
+        border: 1px solid #f3f3f3ef;
+        transition: all .5s;
     }
 
     .header__menu-item {

@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 	$('.header__menu-burger').on('click', () => {
 		
-		$('.header__menu').slideToggle();
+		$('.header__menu').toggleClass('header__menu--active');
 
 		$('.header__menu-burger').toggleClass('header__menu-burger--active')
 	})
