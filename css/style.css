@@ -735,7 +735,7 @@ span + .property-display__icon {
 }
 
 .questions__item-img--plus {
-    transition: all 3s;
+    transition: all .3s;
 }
 
 .questions__item-ansver-container {
@@ -1548,7 +1548,7 @@ span + .property-display__icon {
     }
 
     .questions {
-        margin-bottom: 95px;
+        margin-bottom: 200px;
     }
 
     .questions__wrapper {
@@ -1690,6 +1690,8 @@ span + .property-display__icon {
     .footer__block--active::after {
         top: 47px;
     }
+
+
 
     .footer__blocks-list {
         display: none;

@@ -85,9 +85,12 @@ $(document).ready(function() {
 	// Dropdown menu ----------------------------------------------------------
 
 	$('.footer__block').on('click', event=>{
+		if(window.matchMedia('(max-width: 464px)').matches) {
 		$(event.currentTarget).children('.footer__blocks-list').toggleClass('footer__blocks-list--active',);
-		$(event.currentTarget).siblings('.footer__block').slideToggle();
+		$(event.currentTarget).siblings('.footer__block').fadeToggle();
 		$(event.currentTarget).toggleClass('footer__block--active');
+	};
+
 	})
 
   });
