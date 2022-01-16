@@ -68,7 +68,8 @@ $(document).ready(function() {
 
 		$(event.currentTarget).parent().siblings().children('.questions__item-ansver-container').css('display', 'none');
 		$(event.currentTarget).parent().siblings().children('.questions__item-button').children().replaceWith('<img class="questions__item-img--plus" src="./images/button-sign-plus.svg" alt="">');
-		
+		$(event.currentTarget).parent().siblings().removeClass('questions__item--active');
+
 		$(event.currentTarget).parent().toggleClass('questions__item--active');
 	});
 
