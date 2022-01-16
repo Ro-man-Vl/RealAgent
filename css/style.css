@@ -526,23 +526,34 @@ span + .property-display__icon {
 }
 
 .gallery__popup-gallery {
+}
+
+.gallery_large-wrapper {
+    margin-bottom: 30px;
+}
+
+.gallery_large-wrapper,
+.gallery_small-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.gallery__link-large {
+    width: 48.7%;
+}
+
+.gallery__link-small {
+    width: 31.6%;
+}
+
 .gallery__img {
-    margin-bottom: 19px;
     cursor: zoom-in;
 }
 
-.gallery__img--big {
-    max-width: 554px;
-}
-
+.gallery__img--big,
 .gallery__img--small {
-    max-width: 360px;
-}
+    width: 100%;
+} 
 
 /* Feedback --------------------------------------------*/
 
@@ -976,20 +987,8 @@ span + .property-display__icon {
         margin-left: 10px;
     }
 
-    .gallery__popup-gallery {
-        justify-content: space-around;
-    }
-
-    .gallery__img {
-        margin-bottom: 5px;
-    }
-    
-    .gallery__img--big {
-        max-width: 425px;
-    }
-
-    .gallery__img--small {
-        max-width: 277px;
+    .gallery_large-wrapper {
+        margin-bottom: 20px;
     }
 
     .questions__item {
@@ -1093,12 +1092,8 @@ span + .property-display__icon {
         margin-top: 40px;
     }
 
-    .gallery__img--big {
-        max-width: 350px;
-    }
-
-    .gallery__img--small {
-        max-width: 230px;
+    .gallery_large-wrapper {
+        margin-bottom: 15px;
     }
 
     .feedback__slider {
@@ -1155,14 +1150,6 @@ span + .property-display__icon {
 
     .header__text {
         max-width: 314px;
-    }
-    
-    .gallery__img--big {
-        max-width: 290px;
-    }
-
-    .gallery__img--small {
-        max-width: 190px;
     }
 
     .footer__container {
@@ -1396,6 +1383,10 @@ span + .property-display__icon {
         margin-bottom: 33px;
     }
 
+    .gallery_large-wrapper {
+        margin-bottom: 10px;
+    }
+
     .feedback {
         padding: 43px 0
     }
@@ -1537,6 +1528,10 @@ span + .property-display__icon {
 
     .article__text {
         margin-bottom: 14px
+    }
+
+    .gallery_large-wrapper {
+        margin-bottom: 7px;
     }
 
     .feedback__wrapper {
@@ -1753,6 +1748,21 @@ span + .property-display__icon {
     .gallery {
         padding-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .gallery_large-wrapper,
+    .gallery_small-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .gallery__link-large,
+    .gallery__link-small {
+        width: 98%;
+    }
+
+    .gallery_large-wrapper {
+        margin-bottom: 0px;
     }
 
     .feedback {
