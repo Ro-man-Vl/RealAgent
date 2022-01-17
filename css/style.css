@@ -201,7 +201,7 @@ input:focus-visible {
 
 .header__text {
     opacity: 0.7;
-    max-width: 463px;
+    max-width: 471px;
     padding-right: 10px;
 }
 
@@ -375,6 +375,8 @@ input:focus-visible {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(0, 0, 0, .4);
+    margin-bottom: 7px;
+    margin-right: 2px;
 }
 
 .property-display__menu-item {
@@ -436,7 +438,7 @@ input:focus-visible {
     grid-area: 1/1/3/2;
 }
 .property-display__description {
-    padding: 45px 45px;
+    padding: 45px 40px;
     display: flex;
     align-items: flex-end;
     background-color: #fff;
@@ -529,6 +531,7 @@ span + .property-display__icon {
 }
 
 .gallery_large-wrapper {
+    max-height: 353px;
     margin-bottom: 30px;
 }
 
@@ -558,7 +561,7 @@ span + .property-display__icon {
 /* Feedback --------------------------------------------*/
 
 .feedback {
-    padding: 97px 0;
+    padding: 111px 0;
     background-color: #fff;
 }
 
@@ -688,7 +691,7 @@ span + .property-display__icon {
 /* Questions --------------------------------------------*/
 
 .questions {
-    padding-top: 106px;
+    padding-top: 93px;
     margin-bottom: 49px;
 }
 
