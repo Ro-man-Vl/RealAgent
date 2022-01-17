@@ -1768,6 +1768,7 @@ span + .property-display__icon {
 
     .gallery_large-wrapper {
         margin-bottom: 0px;
+        max-height: initial;
     }
 
     .feedback {
