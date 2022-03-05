@@ -1,6 +1,12 @@
 $(document).ready(function() {
     
-    $('.gallery__img').magnificPopup({
+	$('.article__link').magnificPopup({
+		type:'inline',
+		closeBtnInside:true,
+		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	  });
+	
+	$('.gallery__img').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
 		closeBtnInside: false,
