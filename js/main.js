@@ -73,13 +73,17 @@ $(document).ready(function() {
 		$(event.currentTarget).parent().toggleClass('questions__item--active');
 	});
 
+	// Menu hiddern on scroll -------------------------------------------------
+
+	
+
 	// Burger menu ------------------------------------------------------------
 
 	$('.header__menu-burger').on('click', () => {
 		
 		$('.header__menu').toggleClass('header__menu--active');
-
 		$('.header__menu-burger').toggleClass('header__menu-burger--active')
+		$('body').toggleClass('lock');
 	})
 
 	// Dropdown menu ----------------------------------------------------------
