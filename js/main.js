@@ -91,14 +91,6 @@ $(document).ready(function() {
 			$('.header__menu-area').removeClass('header__menu-area--white-bg');
 			$('.header__menu-wrapper').removeClass('header__menu-wrapper--fade')
 		};
-		
-		// if (prevScrollPos > carrentScrollPos) {
-		// 	$('.header__menu-wrapper').addClass('header__menu-wrapper--fade')
-		// } else {
-		// 	$('.header__menu-wrapper').removeClass('header__menu-wrapper--fade')
-		// };
-
-		// prevScrollPos = carrentScrollPos
 	})
 
 
