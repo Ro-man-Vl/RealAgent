@@ -54,6 +54,60 @@ input:focus-visible {
     outline: none;
 }
 
+.slick-arrow {
+    font-size: 0;
+    position: absolute;
+    bottom: 3%;
+    z-index: 10;
+    border: none;
+    width: 15px;
+    height: 26px;
+    background-color: transparent;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+    background-image: url(../images/arrow-left.svg);
+}
+
+.slick-next {
+    right: 10px;
+    background-image: url(../images/arrow-right.svg);
+} 
+
+.slick-dots {
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots button {
+    background-color: hsla(217, 91%, 5%, 0.4);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-active button {
+    background-color: hsla(217, 91%, 5%, 0.2);
+}
+
+.slick-dots li {
+    margin-left: 5px;
+}
+
+
 /* Elements ------------------------------------- */
 
 .container {
@@ -331,10 +385,14 @@ input:focus-visible {
     background-position: top right;
 }
 
+.article__slider {
+    max-width: 557px;
+}
+
 .article__wrapper {
     padding: 63px 39px 62px 54px;
     background: #FFFFFF;
-    max-width: 557px;
+    width: 100%;
 }
 
 .article__headline {
@@ -359,6 +417,7 @@ input:focus-visible {
     color: inherit;
     padding-right: 2px;
     display: inline-block;
+    margin-bottom: 15px;
 }
 
 .article__link:hover {
@@ -643,62 +702,10 @@ span + .property-display__icon {
     box-shadow: -10px 5px 20px 2px rgb(177 179 182 / 10%);
 }
 
-.feedback .slick-arrow {
-    font-size: 0;
-    position: absolute;
-    top: 90%;
-    z-index: 10;
-    border: none;
-    width: 15px;
-    height: 26px;
-    background-color: #fff;
-    margin-top: -10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
- .feedback .slick-prev {
-    left: 10px;
-    background-image: url(../images/arrow-left.svg);
-}
-
-.feedback .slick-next {
-    right: 10px;
-    background-image: url(../images/arrow-right.svg);
-} 
-
-.feedback .slick-dots {
-    display: flex;
-    font-size: 0;
-    position: absolute;
-    top: 90%;
-    z-index: 10;
-    left: 50%;
-    margin-left: -39px;
-    border: none;
-    cursor: pointer;
-}
-
-.feedback .slick-dots li {
-    margin-left: 5px;
-}
-
-.feedback .slick-dots button {
-    background-color: rgb(219, 219, 219, .5);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.feedback .slick-active button {
-    background-color: rgb(219, 219, 219, 1);
-}
-
 .feedback__slider-item {
     padding: 45px 148px 51px 45px;
 }
+
 .feedback__stars {
     width: 88px;
     height: 15.5px;
@@ -1346,6 +1353,7 @@ span + .property-display__icon {
         background-color: #fff;
         width: 100vw;
         padding: 50px 20px 30px;
+        margin-left: -6px;
     }
 
     .artticle__popup .mfp-close {
@@ -1503,10 +1511,14 @@ span + .property-display__icon {
         margin: 43px 0 43px;
         padding: 52px 0
     }
+
+    .article__slider {
+        max-width: 490px;
+    }
     
     .article__wrapper {
         padding: 52px 25px 52px 25px;
-        max-width: 490px;
+        
     }
 
     .headline {
@@ -1666,17 +1678,15 @@ span + .property-display__icon {
     }
 
     .article__background-field {
-        margin: 0px 0 88px
+        background-image: none;
     }
 
-    .article__background-field {
-        margin: 43px 0 43px;
-        padding: 35px 0
+    .article__slider {
+        max-width: 374px;
     }
     
-    .article__wrapper {
-        padding: 32px 20px 32px 20px;
-        max-width: 374px;
+    .article__wrapper.slick-slide {
+        padding: 32px 20px;
     }
 
     .headline {
@@ -1703,7 +1713,6 @@ span + .property-display__icon {
     }
     
     .slick-slider {
-        top: 165px;
         margin-left: 0;
         margin: auto;
         width: 90%;
@@ -1749,10 +1758,6 @@ span + .property-display__icon {
 }
 
 @media only screen and (max-width:464px) {
-
-    .article__background-field {
-        background-image: none;
-    }
 
     .article__wrapper {
         margin: 0 auto;
