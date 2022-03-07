@@ -36,35 +36,13 @@ $(document).ready(function() {
 
 	// Propery-display block switch -------------------------------------------
 
+	var mixer = mixitup('.property-display__body');
+
 	$('.property-display__menu-item').on('click', event=>{
 		$(event.currentTarget).siblings().removeClass('property-display__menu-item-active');
 		$(event.currentTarget).addClass('property-display__menu-item-active')
 	});
 	
-	$('#house').on('click', ()=>{
-		$('.property-display__block--apartment').css('display', 'none');
-		$('.property-display__block--house').css('display', 'flex');
-		$('.property-display__block--land').css('display', 'none');
-	});
-	
-	$('#apartment').on('click', ()=>{
-		$('.property-display__block--apartment').css('display', 'flex');
-		$('.property-display__block--house').css('display', 'none');
-		$('.property-display__block--land').css('display', 'none');
-	});
-
-	$('#land').on('click', ()=>{
-		$('.property-display__block--apartment').css('display', 'none');
-		$('.property-display__block--house').css('display', 'none');
-		$('.property-display__block--land').css('display', 'flex');
-	});
-
-	$('#all').on('click', ()=>{
-		$('.property-display__block--apartment').css('display', 'flex');
-		$('.property-display__block--house').css('display', 'flex');
-		$('.property-display__block--land').css('display', 'flex');
-	});
-
 	// Questions dropdown list -----------------------------------------------
 
 	$('.questions__item-button').on('click', event=>{
@@ -117,10 +95,20 @@ $(document).ready(function() {
 
 	$('.footer__block').on('click', event=>{
 		if(window.matchMedia('(max-width: 464px)').matches) {
-		$(event.currentTarget).children('.footer__blocks-list').toggleClass('footer__blocks-list--active',);
-		$(event.currentTarget).siblings('.footer__block').fadeToggle();
-		$(event.currentTarget).toggleClass('footer__block--active');
-	};
+
+			var hasClass = $(event.currentTarget).siblings('.footer__block').hasClass('footer__block--invis');
+
+			if (hasClass) {
+				$('.footer__block').removeClass('footer__block--invis');
+				$('.footer__blocks-list').removeClass('footer__blocks-list--active');
+				$('.footer__blocks-title').removeClass('footer__blocks-title--rotate');
+			} else {
+				$(event.currentTarget).siblings('.footer__block').addClass('footer__block--invis');
+				$(event.currentTarget).children('.footer__blocks-list').addClass('footer__blocks-list--active');
+				$(event.currentTarget).children('.footer__blocks-title').addClass('footer__blocks-title--rotate');
+			};
+
+		};
 
 	})
 
