@@ -551,17 +551,6 @@ input:focus-visible {
     gap: 20px;
 }
 
-.property-display__item {
-    /* display: grid;
-    grid-template-rows: 299px 102px 107px;
-    justify-items: center;
-    margin-bottom: 30px; */
-}
-
-.property-display__image-wrapper {
-    
-}
-
 .property-display__image {
     display: block;
     width: 100%;
@@ -1299,6 +1288,7 @@ span + .property-display__icon {
 
     .header__menu-burger::after {
         bottom: 0;
+        transform: rotate(180deg);
     }
 
     .header__menu-burger span {
@@ -1311,12 +1301,12 @@ span + .property-display__icon {
     }
 
     .header__menu-burger--active::before {
-        transform: rotate(225deg);
+        transform: rotate(45deg);
         top: 11px;
     }
 
     .header__menu-burger--active::after {
-        transform: rotate(-225deg);
+        transform: rotate(315deg);
         bottom: 11px;
     }
 
@@ -1816,6 +1806,7 @@ span + .property-display__icon {
 
     .footer__container {
         position: relative;
+        overflow: hidden;
     }
 
     .footer__block-contacts {
@@ -1892,7 +1883,7 @@ span + .property-display__icon {
         font-size: 18px;
         position: absolute;
         bottom: -350px;
-        left: 400px;
+        left: 550px;
         min-width: 100px;
         transition: all .3s;
     }
