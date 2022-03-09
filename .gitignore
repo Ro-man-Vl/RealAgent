@@ -1,2 +1,14 @@
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+
+dist/
+node_modules/
+package-lock.json
+app/images/*
+
 Real Estate Landing Page.png
 Real Estate Landing page Figma.fig
