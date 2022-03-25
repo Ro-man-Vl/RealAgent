@@ -6,6 +6,8 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const htmlmin = require('gulp-htmlmin');
+const csso = require('gulp-csso')
 
 function browsersync() {
     browserSync.init({
@@ -17,14 +19,15 @@ function browsersync() {
 }
 
 function styles() {
-    return src('app/css/source/*.css', { sourcemaps: true })
+    return src('app/css/source/*.css')
         // .pipe(scss({outputStyle: 'compressed'} ))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 versions'],
             grid: true
         }))
-        .pipe(dest('app/css', { sourcemaps: true }))
+        .pipe(csso())
+        .pipe(dest('app/css'))
         .pipe(browserSync.stream())
 }
 
@@ -59,16 +62,25 @@ function images() {
 }
 
 function build() {
-    return src([
-        'app/**/*.html',
+    // return src([
+    //     'app/**/*.html',
+    //     'app/css/style.min.css',
+    //     'app/js/main.min.js'
+    // ], {base: 'app'})
+    return src('app/**/*.html')
+    .pipe(htmlmin({
+        collapseWhitespace: true
+    }))
+    .pipe(dest('docs'))
+    .pipe(src([
         'app/css/style.min.css',
         'app/js/main.min.js'
-    ], {base: 'app'})
+    ], {base: 'app'}))
     .pipe(dest('docs'))
 }
 
 function cleanDist() {
-    return del('dist')
+    return del('./docs')
 }
 
 function watching() {
